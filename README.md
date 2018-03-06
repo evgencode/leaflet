@@ -6,7 +6,7 @@
  
 # Install #
     # npm install
-    # npm run devbuild
+    # npm run es6build
     # npm run start
     # open in browser: http://localhost:3000
         
