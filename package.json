@@ -1,0 +1,44 @@
+{
+  "name": "leaflet",
+  "version": "1.0.0",
+  "description": "leaflet test task",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "static -p 3000",
+    "es6build": "webpack --config webpack.es6.js"
+  },
+  "author": "Evgen",
+  "license": "ISC",
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.8.1",
+    "node-static": "^0.7.10",
+    "uglify-es": "^3.1.8",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "leaflet": "^1.3.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-leaflet": "^1.8.2",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
+  }
+}
