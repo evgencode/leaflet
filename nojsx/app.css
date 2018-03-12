@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#app {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+.appwrap {
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  width: 800px;
+}

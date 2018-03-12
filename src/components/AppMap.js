@@ -198,24 +198,24 @@ class AppMap extends Component {
           </select>
         </div>
         <Map id="app_map" center={position} zoom={this.state.zoom} onClick={this.addMarker}>
-            <TileLayer
-              attribution={attribution}
-              url={url}
-            />
-            {
-              layers.map(layer => {
-                return (
-                  layer.checked && (
-                    <LayerGroup key={layer.id}>
-                      {
-                        layer.markers.map(marker =>
-                          <Marker position={marker.position} key={marker.id} onClick={() => {this.deleteMarker(layer.id, marker.id)}}/>)
-                      }
-                    </LayerGroup>
-                  )
+          <TileLayer
+            attribution={attribution}
+            url={url}
+          />
+          {
+            layers.map(layer => {
+              return (
+                layer.checked && (
+                  <LayerGroup key={layer.id}>
+                    {
+                      layer.markers.map(marker =>
+                        <Marker position={marker.position} key={marker.id} onClick={() => {this.deleteMarker(layer.id, marker.id)}}/>)
+                    }
+                  </LayerGroup>
                 )
-              })
-            }
+              )
+            })
+          }
         </Map>
       </div>
     )

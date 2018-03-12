@@ -1,5 +1,8 @@
 import './lib/mocha.css';
 import './test.css';
+import React, {Component} from 'react';
+import {render} from 'react-dom';
+
 import {log} from '../src/utils';
 mocha.setup('bdd');
 
@@ -13,8 +16,5 @@ describe('Array', function() {
     });
   });
 });
-
-
-
 
 require('./mochaInit');
