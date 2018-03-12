@@ -20,8 +20,10 @@ const layers = [
         position: [56.313, 43.985]
       }
     ]
-  }
+  },
 ]
+
+export {layers};
 
 export const fetchLayers = async () => {
   return new Promise((resolve) => {

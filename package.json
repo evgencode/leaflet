@@ -5,7 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start": "static -p 3000",
-    "es6build": "webpack --config webpack.es6.js"
+    "es6build": "webpack --config webpack.es6.js",
+    "test": "static -p 3002 test/",
+    "testbulid": "webpack --config webpack.test.js"
   },
   "author": "Evgen",
   "license": "ISC",
@@ -21,19 +23,21 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "chai": "^4.1.2",
     "clean-webpack-plugin": "^0.1.17",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.11.2",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.8.1",
     "node-static": "^0.7.10",
+    "style-loader": "^0.18.2",
     "uglify-es": "^3.1.8",
-    "uglifyjs-webpack-plugin": "^1.0.0-beta.2"
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.8.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
     "leaflet": "^1.3.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

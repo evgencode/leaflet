@@ -24,10 +24,6 @@ const isFunction = function( obj ) {
   return this.type( obj ) === "function";
 };
 
-export function log(...args) {
-  console.log(...args);
-}
-
 export function fetchHandleErrors(type = 'text') {
   return (response) => {
     if (!response.ok) {
@@ -115,3 +111,5 @@ export function extend() {
 
   return target;
 }
+
+export const log = console.log;

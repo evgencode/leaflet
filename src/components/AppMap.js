@@ -166,7 +166,7 @@ class AppMap extends Component {
 
   componentDidMount() {
     fetchLayers().then(layers => {
-      this.setState({layers: layers});
+      this.setState({layers});
       this.setInput();
     })
   }
