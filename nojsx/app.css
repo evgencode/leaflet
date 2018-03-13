@@ -1,20 +1,102 @@
 html {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: #fafafa;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  outline: 0;
+  height: 30px;
+  width: 320px;
+}
+
+button {
+  height: 30px;
+}
+
 #app {
   width: 100%;
   display: flex;
   min-height: 100vh;
-  align-items: stretch;
 }
 
 .appwrap {
   margin: 0 auto;
   padding: 2rem 4rem;
   width: 800px;
+}
+
+.add-todo {
+  margin: 1rem 0;
+}
+
+.todo__item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.todo__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ff9900;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo__name {
+  margin-left: 10px;
+}
+
+.todo__item_done .todo__checkbox::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff9900;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.todo__item_done .todo__name {
+  text-decoration:line-through;
+}
+
+.todo__delete {
+  padding: 0 8px;
+  align-self: start;
+  margin-left: 10px;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ff9900;
+}
+
+.tabs__item {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0,0,0,.05);
+  cursor: pointer;
+}
+
+.tabs__item:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.tabs__item_active {
+  background-color: rgba(0,0,0,0.2);
+  color: #ffffff;
 }
